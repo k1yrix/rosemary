@@ -19,7 +19,7 @@ body:
       label: Please describe the issue
     validations:
       required: true
-  - type: 
+  - type: textarea
     id: id
     attributes:
       label: Please input which commit or binary version of Rosemary you are running with
