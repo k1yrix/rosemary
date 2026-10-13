@@ -1,0 +1,34 @@
+name: Bug Report
+labels: "bug"
+description: Report a problem you're having
+body:
+  - type: checkboxes
+    id: certify
+    attributes:
+      label: Before starting a report, please certify the following
+      options:
+        - label: I certify that I have checked the issue board for any open issues related to mine
+          required: true
+        - label: I certify that the report is described as-is on my own interpretation, without any assistance or generation from AI
+          required: true
+        - label: I agree that I just checked every box without actually reading anything
+          required: false
+  - type: textarea
+    id: describe
+    attributes:
+      label: Please describe the issue
+    validations:
+      required: true
+  - type: 
+    id: id
+    attributes:
+      label: Please input which commit or binary version of Rosemary you are running with
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: "Which game or program is this issue associated with (if applicable)"
+    validations:
+      required: false
+      
